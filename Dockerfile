@@ -8,7 +8,7 @@ LABEL   org.opencontainers.image.licenses=Apache-2.0
 ARG     EMPTY
 ENV     PROJECT_UUID=$EMPTY
 ENV     SENSOR_NAME=$EMPTY
-ENV     RECEIVER_HOST=$EMPTY
+ENV     RECEIVER_HOST=receiver.metrasensor.com
 ENV     PROMETHEUS_HOST=$EMPTY
 
 COPY    telegraf.conf /etc/telegraf/

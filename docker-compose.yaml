@@ -9,11 +9,11 @@ services:
       - "--path.rootfs=/host"
     pid: host
     restart: unless-stopped
-  mtr-agent:
+  promagent:
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: mtr-agent
+    container_name: promagent
     restart: unless-stopped
     environment:
       PROJECT_UUID: [your_project_uuid]
